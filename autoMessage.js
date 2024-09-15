@@ -52,7 +52,11 @@ const sendMessage = (channel_id,auth,s,message,clearIntervalS)=> {
 			else
 				log(Type.Error,err);
 		})
-		  .then(_=>{
+		  .then(res=>{
+			 if(res.status >= 400) { 
+				 log(Type.ERROR,`${res.statusText} : Message Couldn't be sent`);
+				 return;
+			 }
     	  		log(Type.INFO,`Message "${message}" Sent to channel ${channel_id}`)
       			count+=1;
       			log(Type.INFO,`Total number of Message "${message}" sent to channel ${channel_id} : ` + count + "\n");
