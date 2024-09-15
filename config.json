@@ -1,0 +1,14 @@
+[
+    {
+        "channel" : "1206281063207276584",
+        "message" : "wh",
+        "intervalTimeInSec" :  180,
+        "clearIntervalTimeInSec" : 14400
+    },
+    {
+        "channel" : "1206281063207276584",
+        "message" : "wpray",
+        "intervalTimeInSec" :  303,
+        "clearIntervalTimeInSec" : 14400
+    }
+]
