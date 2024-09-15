@@ -53,9 +53,9 @@ const sendMessage = (channel_id,auth,s,message,clearIntervalS)=> {
 				log(Type.Error,err);
 		})
 		  .then(_=>{
-    	  		log(Type.INFO,`Message ${message} Sent to channel ${channel_id}`)
+    	  		log(Type.INFO,`Message "${message}" Sent to channel ${channel_id}`)
       			count+=1;
-      			log(Type.INFO,`Total number of Message ${message} sent to channel ${channel_id} : ` + count + "\n");
+      			log(Type.INFO,`Total number of Message "${message}" sent to channel ${channel_id} : ` + count + "\n");
     		});
     }
 
